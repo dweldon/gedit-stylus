@@ -442,7 +442,7 @@
     </context>
 
     <context id="dimension" style-ref="dimension">
-      <match>[\+-]?([0-9]+|[0-9]*\.[0-9]+)(%|e(m|x)|p(x|t|c)|in|ft|(m|c)m|k?Hz|deg|g?rad|m?s)</match>
+      <match>[\+-]?([0-9]+|[0-9]*\.[0-9]+)(%|r?em|ex|p(x|t|c)|in|ft|(m|c)m|k?Hz|deg|g?rad|m?s)</match>
     </context>
 
     <context id="function">
