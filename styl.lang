@@ -79,6 +79,10 @@
       <match><![CDATA[&]]></match>
     </context>
 
+    <context id="hexadecimal-color" style-ref="color">
+      <match>#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})\b</match>
+    </context>
+
     <context id="class-tag" style-ref="class-tag">
       <match>(\.)[a-zA-Z][a-zA-Z0-9_-]*</match>
     </context>
@@ -441,11 +445,6 @@
       <match>[\+-]?([0-9]+|[0-9]*\.[0-9]+)(%|e(m|x)|p(x|t|c)|in|ft|(m|c)m|k?Hz|deg|g?rad|m?s)</match>
     </context>
 
-    <context id="hexadecimal-color" style-ref="color">
-      <match>#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})</match>
-    </context>
-
-
     <context id="function">
       <match>([a-zA-Z][a-zA-Z0-9-_]*)\(</match>
       <include>
@@ -472,4 +471,3 @@
   </context>
   </definitions>
 </language>
-
